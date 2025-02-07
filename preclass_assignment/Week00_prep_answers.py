@@ -11,6 +11,7 @@ Created on Tue Feb  4 11:16:19 2025
 def greet(name: str) -> None:
     print(f"Hello, {name}!")
 
+greet('World')
 #%% if else statement 
 
 def goldilocks(bed_length: int) -> None:
@@ -21,7 +22,12 @@ def goldilocks(bed_length: int) -> None:
     else:
         print("Just right. :)")
         
-        
+goldilocks(139)
+goldilocks(140)
+goldilocks(145)
+goldilocks(150)
+goldilocks(151)
+
 #%% Lists 
 
 def square_list(numbers: list) -> list:     #returning list 
@@ -30,7 +36,7 @@ def square_list(numbers: list) -> list:     #returning list
         squared_numbers.append(num ** 2)    #adding the numbers from the loop 
     return squared_numbers                  
 
-
+square_list([1,2,3,4])
 #%%
 
 def fibonacci_stop(max_value: int) -> list:
