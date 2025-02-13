@@ -5,12 +5,15 @@ manage different versions of code/files locally / remotely
 
 gitlab: repo management service (web based platform)
 
+
+=======
 Veronica Answers:
     1. Git: version control system: save your work, update, and keep track of changes. Saves "snapshots".
     (https://www.bairesdev.com/blog/git-github-and-gitlab-whats-the-difference/)
     GitLab: For DevOps, meaning instead of using different plaforms for Issue Tracking, Source Control, CI/CD (continous integrating/continous deployment) Testing, Monitoring, GitLab compines everything in one platform. It alos uses packages to store your code.
     Essentially GitLab is building --> Testing --> Deploying. 
     (Gitlab Explained: What is Gitlab and Why Use It?)
+
 
 2.	What is the difference between GitLab, GitHub, and BitBucket?  
 different services that provide servers and interfaces for storing repos remotely
@@ -19,6 +22,12 @@ GitLab → Best for self-hosting, DevOps, and CI/CD automation.
 GitHub → Best for open-source collaboration, large community, and general development.
 Bitbucket → Best for small teams & enterprises, integrates well with Jira & Atlassian products.
 
+
+3.	Why would I ever want to use git, but not GitLab?  
+if you are only working on one computer alone and dont need to collaborate 
+
+4.	What are the steps to update the GitLab server with some changes I made on my computer?  
+=======
 Veronica Answer:
     2. GitHub: owned by Microsoft. Integration offered by third-party vendors. Focusies on a strong community and encoureges collaboration. Older so more users. 
     GitLab: owned by GitLab Inc. Build-in integrations. Is more all in one. 
@@ -41,6 +50,7 @@ Veronica Answers:
         c. Puch changes to GitLab 
             git push origin >branch name<
             Branch name typically main or master
+
 0. git status
 1. git add (files) (staging)
 2. git commmit (write what was done)
@@ -94,7 +104,11 @@ convert word to markdown or use latex/google docs / word online
 10.	What could happen when I push my latest commit to the remote repository without pulling first?  
 
 there might be a conflict with a file if someone has worked on the same thing as you 
+
+therefore, always pull first, resovle potential conflicts and then push
+=======
 therefore, always pull first, resolve potential conflicts and then push
+
 
 
 11.	What happens when I pull without commiting my local changes first?  
