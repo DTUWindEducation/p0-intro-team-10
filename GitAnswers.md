@@ -94,7 +94,7 @@ convert word to markdown or use latex/google docs / word online
 10.	What could happen when I push my latest commit to the remote repository without pulling first?  
 
 there might be a conflict with a file if someone has worked on the same thing as you 
-therefore, always pull first, resovle potential conflicts and then push
+therefore, always pull first, resolve potential conflicts and then push
 
 
 11.	What happens when I pull without commiting my local changes first?  
