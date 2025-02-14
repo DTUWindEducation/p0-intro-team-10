@@ -21,7 +21,7 @@ def test_goldilocks(capsys):
     bed_size = 139  # test input to function
     exp_out = 'Too small!'
     # when
-    fxn.goldilocks(inp)  # see goldilocks reaction
+    fxn.goldilocks(bed_size)  # see goldilocks reaction
     captured = capsys.readouterr()  # capture what would have been printed to screen
     # then
     assert captured.out == exp_out # throw error if actual and expected output don't match
