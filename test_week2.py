@@ -19,7 +19,7 @@ def test_goldilocks(capsys):
     """Check goldilocks returns expected output"""
     # given
     bed_size = 139  # test input to function
-    exp_out = 'Too small!'
+    exp_out = 'Too small!\n'  # expected output
     # when
     fxn.goldilocks(bed_size)  # see goldilocks reaction
     captured = capsys.readouterr()  # capture what would have been printed to screen
