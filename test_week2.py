@@ -51,6 +51,7 @@ def test_fibonacci_stop():
 def test_clean_pitch():
     """Check clean_pitch works as expected."""
     # given
+
     # when
     # then
     assert False  # TODO! Update the contents of this function so it correctly tests clean_pitch
