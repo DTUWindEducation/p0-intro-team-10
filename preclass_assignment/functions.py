@@ -34,6 +34,8 @@ def square_list(numbers):
         numbers (list): A list of numbers to be squared.
     """
     print([number**2 for number in numbers])
+    output = [number**2 for number in numbers]
+    return output
 
 #4
 def fibonacci_stop(max_value):
@@ -48,6 +50,8 @@ def fibonacci_stop(max_value):
     while fib_seq[-1]+fib_seq[-2] <=max_value:
         fib_seq.append(fib_seq[-1]+fib_seq[-2])
     print(fib_seq)
+    output = fib_seq
+    return output
 
 #5
 def clean_pitch(measurements, status):

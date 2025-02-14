@@ -48,10 +48,15 @@ def test_fibonacci_stop():
     # then
     assert exp_out == out  # throw error if actual and expected output don't match
 
-def test_clean_pitch():
+def test_clean_pitch(capsys):
     """Check clean_pitch works as expected."""
     # given
+    x = [-1, 2, 6, 95]  # "raw" pitch angle at four time steps
+    status = [1, 0, 0, 0]  # status signal
 
+    exp_out = '[-999, 2, 6, 95]\n'  # expected output
     # when
+    fxn.clean_pitch(x, status) #see output of clean_pitch
+    captured = capsys.readouterr()  # capture what would have been printed to screen
     # then
-    assert False  # TODO! Update the contents of this function so it correctly tests clean_pitch
+    assert captured.out == exp_out  # throw error if actual and expected output don't match
